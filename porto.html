@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Malik</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* border: solid;
+            border-width: 1px; */
+        }
+        body {
+            font-family: ubuntu;
+            background: rgb(176,176,179);
+background: linear-gradient(90deg, rgba(176,176,179,0.3925945378151261) 1%, rgba(255,255,255,1) 48%, rgba(176,176,179,0.4290091036414566) 99%);
+            animation: TransitionIn 0.7s;
+        }
+        @keyframes TransitionIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        .header ul {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            background-color: grey;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
+            animation: TransitionIn 0.5s;
+        }
+        .header ul li {
+            display: inline-block;
+            padding: 40px 15px;
+        }
+        .header ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: uppercase;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            transition: .7s;           
+        }
+        #porto {
+            text-decoration: underline;
+        }
+        #porto:hover {
+            text-decoration: none;
+        }
+        .header ul li a:hover {
+            background: #fff;
+            color: #000;
+        }
+        #satu {
+            font-family: Monospace;
+            display: flex;
+            justify-content: center;
+        }
+        #p1 {
+            text-align: center;
+            line-height: 1.7;
+            width: 75%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            justify-content: center;
+        }
+        #img1 {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border-style: solid;
+        }
+        .container {
+            display: flex;
+            justify-content: start;
+            margin-top: 150px;
+            animation: TransitionIn 1.5s;
+        }
+        .containerimg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        .containerintro {
+            margin: auto;
+            margin-left: 100px;
+            width: 50%;
+        }
+        .containerp1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .container1 {
+            margin-top: 170px;
+            display: flex;
+            justify-content: start;
+            animation: TransitionIn 2.5s;
+        }
+        .containeredu {
+            margin: auto;
+            width: 50%;
+            margin-left: 160px;
+        }
+        .containerimg1 {
+            display: flex;
+            justify-content: center;
+            margin-left: 250px;
+            width: 300px;
+        }
+        #ums {
+            width: 250px;
+            height: 250px;
+        }
+        #dua {
+            font-family: Monospace;
+            display: flex;
+            justify-content: center;
+        }
+        #info ,#p2 {
+            text-align: center;
+            line-height: 1.7;
+            width: 75%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        #p2 {
+            margin-left: 30px;
+        }
+        #info {
+            font-size: larger;
+            margin-left: 20px;
+        }
+        .infos {
+            text-align: center;
+            margin-left: 100px;
+        }
+        #h33 {
+            text-align: center;
+        }
+        #a1 {
+            text-decoration: none;
+            transition: 1s;
+        }
+        #a1:hover {
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="porto.html" id="porto">Portofolio</a></li>
+            <li><a href="Home.html" id="home">Home</a></li>
+            <li><a href="Contact.html" id="contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container">
+    <div class="containerintro">
+        <h1 id="satu">Intoduction</h1>
+    <div class="containerp1">
+        <p id="p1">My name is Luthfi Almalik Winantea, but I usually go by Malik. I am 19 years old and live in Indonesia, specifically in the city of Solo. My aspiration is to become a programmer, and my hobbies include playing and sleeping. You can find my contact information on the <a href="Contact.html" id="a1">contact</a> page. I am a programmer who has learned Java, Python, HTML, and CSS. My future goal is to enhance my knowledge in both backend and frontend development so that I can master full-stack development.</p>
+    </div>
+    </div>
+    <div class="containerimg">
+        <img src="lik.jpeg" alt="Malik" id="img1">
+    </div>
+    </div>
+
+
+    <div class="container1">
+        <div class="containerimg1">
+            <img src="ums.png" alt="ums" id="ums">
+        </div>
+        <div class="containeredu">
+            <h1 id="dua">Education</h1>
+        <div>
+            <h3 id="h33">Universitas Muhammadiyah Surakarta</h3>
+        <div class="infos">
+            <p id="info">Informatics Engineering </p>
+            <p id="p2">Jl. A. Yani, Mendungan, Pabelan,
+                Kec. Kartasura, Kabupaten
+                Sukoharjo, Jawa Tengah 57162
+                2022-Now</p>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

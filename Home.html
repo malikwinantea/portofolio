@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Malik</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: ubuntu;
+        }
+        .header {
+            z-index: 1;
+            background: linear-gradient(-45deg,red, green, blue, yellow);
+            background-size: 400% 400%;
+            width: 100%;
+            height: 100vh;
+            animation: animate 15s ease infinite;
+        }
+        .header ul {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .header ul li {
+            display: inline-block;
+            padding: 40px 15px;
+        }
+        .header ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            transition: 0.7s;
+            animation: TransitionIn 0.5s;
+        }
+        #home {
+            text-decoration: underline;
+        }
+        #home:hover {
+            text-decoration: none;
+        }
+        .header ul li a:hover {
+            background: #fff;
+            color: #000;
+        }
+        .header h2 {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+            font-size: 50px;
+            margin-top: 250px;
+            margin-bottom: 20px;
+            animation: TransitionIn 0.5s;
+        }
+        .header p {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 35%;
+            margin: auto;
+            color: #ddd;
+            line-height: 1.7;
+            animation: TransitionIn 1.5s;
+        }
+        @keyframes animate {
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+        @keyframes TransitionIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="porto.html" id="porto">Portofolio</a></li>
+            <li><a href="Home.html" id="home">Home</a></li>
+            <li><a href="Contact.html" id="contact">Contact</a></li>
+        </ul>
+    <div class="intros">
+        <h2 id="hdua">LUTHFI ALMALIK WINANTEA</h2>
+        <p id="p4">I am a computer engineering student, currently learning about HTML and CSS, and this is my first website. My goal is to become proficient in frontend and backend development.</p>
+    </div>
+    </div>
+</body>
+</html>

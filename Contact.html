@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: ubuntu;
+            overflow: hidden;
+        }
+        .header {
+            z-index: 1;
+            background: linear-gradient(-45deg,red, green, blue, yellow);
+            background-size: 400% 400%;
+            width: 100%;
+            height: 100vh;
+            animation: animate 15s ease infinite;
+        }
+        .header ul {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .header ul li {
+            display: inline-block;
+            padding: 40px 15px;
+        }
+        .header ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            transition: .7s;
+            animation: TransitionIn 0.5s;
+        }
+        .header ul li a:hover {
+            background: #fff;
+            color: #000;
+        }
+        #Con {
+            text-decoration: underline;
+        }
+        #Con:hover {
+            text-decoration: none;
+        }
+        .header h2 {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+            font-size: 50px;
+            margin-top: 200px;
+            margin-bottom: 20px;
+            animation: TransitionIn 0.75s;
+        }
+        .header p {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            width: 35%;
+            margin: auto;
+            color: #ddd;
+            line-height: 1.7;
+            animation: TransitionIn 1.15s;
+        }
+        @keyframes animate {
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+        @keyframes TransitionIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        .box li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 25px;
+            height: 25px;
+            background: rgba(255, 255, 255, 0.2);
+            animation: animates 20s linear infinite;
+            bottom: -150px;
+            border-radius: 50%;
+        }
+        .box li:nth-child(1) {
+            left: 86%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+        .box li:nth-child(2) {
+            left: 12%;
+            width: 30px;
+            height: 30px;
+            animation-delay: 1.5s;
+            animation-duration: 10s;
+        }
+        .box li:nth-child(3) {
+            left: 70%;
+            width: 100px;
+            height: 100px;
+            animation-delay: 0s;
+        }
+        .box li:nth-child(4) {
+            left: 45%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 15s;
+        }
+        .box li:nth-child(5) {
+            left: 65%;
+            width: 40px;
+            height: 40px;
+            animation-delay: 0s;
+        }
+        .box li:nth-child(6) {
+            left: 15%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 0s;
+        }
+        @keyframes animates {
+            0% {
+                transform: translateY(0) scale(0);
+            }
+            100% {
+                transform: translateY(-800px) scale(2);
+                opacity: 0;
+            }
+        }
+        #ig {
+            margin: 20px;
+            padding: 10px;
+            transition: 0.6s;
+        }
+        #ig:hover {
+            scale: 140%;
+        }
+        #fb {
+            margin: 20px;
+            padding: 10px;
+            transition: 0.6s;
+        }
+        #fb:hover {
+            scale: 140%;
+        }
+        #wa {
+            margin: 20px;
+            padding: 10px;
+            transition: 0.6s;
+        }
+        #wa:hover {
+            scale: 140%;
+        }
+        .kontak {
+            display: flex;
+            justify-content: center;
+            animation: TransitionIn 1.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="porto.html">Portofolio</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Contact.htmls" id="Con">Contact</a></li>
+        </ul>
+        <h2>CONTACT ME</h2>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia unde, consectetur dignissimos dicta inventore? Rerum itaque voluptas blanditiis facilis odit ea quidem? Repellendus dolore nemo consequuntur sapiente quasi veniam.</p>
+        <div class="kontak">
+            <div class="kontakig">
+                <a href="https://www.instagram.com/malikw_a/">
+                    <img src="ig2.png" alt="Instagram" id="ig">
+                </a>
+            </div>
+            <div class="kontakfb">
+                <a href="https://www.facebook.com/">
+                    <img src="fb1.png" alt="facebook" id="fb">
+                </a>
+            </div>
+            <div class="kontakwa">
+                <a href="https://wa.me/6281237525277">
+                    <img src="wa1.png" alt="whatsapp" id="wa">
+                </a>
+            </div>
+        </div>
+        <div>
+            <ul class="box">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
